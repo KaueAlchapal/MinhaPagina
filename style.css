@@ -1,0 +1,337 @@
+/* ESTILO GERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+.btn-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: rgb(52, 163, 190);
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+h2.Titulo {
+  color: #fff;
+  font-size: 38px;
+  text-align: center;
+}
+
+h2.Titulo span {
+  color: rgb(52, 163, 190);
+}
+button:hover {
+  box-shadow: 0px 0px 8px rgb(52, 163, 190);
+  transform: scale(1.06);
+}
+/* ESTILO CABEÇALHO */
+
+header {
+  padding: 40px 4%;
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  color: #ada8a8;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+header a:hover {
+  color: #fff;
+  transform: scale(1.07);
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+/* ESTILO DO TOPO DO SITE */
+
+section.topo-site {
+  padding: 40px 4%;
+}
+
+section.topo-site .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.topo-site h1 {
+  color: #fff;
+  font-size: 43px;
+  line-height: 42px;
+}
+.topo-site h1 SPAN {
+  color: rgb(52, 163, 190);
+}
+.topo-site .txt-topo-site p {
+  color: #fff;
+  margin: 40px 0px;
+}
+
+.topo-site .img-topo-site img {
+  position: relative;
+  animation: FlutuarImag 2s ease-in-out infinite alternate;
+}
+
+@keyframes FlutuarImag {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 30px;
+  }
+}
+nav.menu-desk ul li a {
+  color: #fff; /* Cor do texto */
+  font-size: 18px; /* Tamanho da fonte */
+  text-decoration: none; /* Remove o sublinhado padrão */
+}
+
+nav.menu-desk ul li a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+
+/*ESTILO DAS "MINHAS ÁREAS" */
+
+section.sobre-mim {
+  padding: 40px 4%;
+}
+
+section.sobre-mim .flex {
+  gap: 70px;
+}
+
+.sobremim .sobremim-box {
+  color: #fff;
+  padding: 40px;
+  border-radius: 25px;
+  border: 2px solid color #fff;
+  margin-top: 50px;
+  transition: 0.2s;
+}
+
+.sobremim .sobremim-box:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 9px #ffffff6e;
+}
+.sobremim .sobremim-box i {
+  font-size: 70px;
+  color: rgb(52, 163, 190);
+}
+.sobremim .sobremim-box p {
+  font-size: 28px;
+  margin: 15px 0;
+}
+.sobremim .Titulo {
+  margin-top: 80px; 
+  margin-bottom: 80px; 
+}
+
+/* ESTILO DO SOBRE */
+
+section.sobre {
+  padding: 100px 4%;
+}
+
+section.sobre .flex {
+  align-items: center;
+  gap: 60px;
+}
+.sobre .txt-sobre {
+  color: #fff;
+}
+.sobre .txt-sobre h2 {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+.sobre .txt-sobre h2 span {
+  color: rgb(52, 163, 190);
+  display: block;
+}
+.sobre .txt-sobre p {
+  margin: 20px 0;
+  text-align: justify;
+}
+.btn-social button {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(52, 163, 190);
+  font-size: 22px;
+  cursor: pointer;
+  margin: 0 8px;
+  transition: 0.2s;
+}
+/* ESTILO DO RODAPÉ */
+
+footer {
+  padding: 40px 4%;
+  box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex {
+  justify-content: space-between;
+}
+
+footer .linha-rodape {
+  padding: 20px 0;
+}
+
+.borda {
+  border-top: 2px solid rgb(52, 163, 190);
+}
+
+footer .linha-rodape p i {
+  color: rgb(52, 163, 190);
+  font-size: 22px;
+}
+
+footer .linha-rodape p a {
+  color: #fff;
+}
+
+@media screen and (max-width: 1020px) {
+  .flex {
+    flex-direction: column-reverse;
+  }
+  h2.Titulo {
+    font-size: 34px;
+    line-height: 30;
+  }
+
+  /*  CABEÇALHO */
+
+  .menu-desk,
+  .btn-contato {
+    display: none;
+  }
+
+  /*  TOPO DO SITE */
+
+  section.topo-site .flex {
+    gap: 42px;
+  }
+
+  section.topo-site {
+    padding: 22px 8%;
+  }
+  .topo-site h1 {
+    font-size: 30px;
+  }
+  .topo-site .img-topo-site img {
+    width: 100%;
+  }
+
+    /*  sobre mim */
+
+
+  section.sobre-mim {
+    padding: 40px 8%;
+  }
+
+  /*  SOBRE */
+
+  section.sobre {
+    padding: 100px 8%;
+  }
+  .sobre .txt-sobre h2 {
+    font-size: 34px;
+    line-height: 35px;
+    text-align: center;
+  }
+.btn-social{
+text-align: center;
+}
+.img-sobre{
+width: 100%;
+}
+
+                      /* RODAPÉ PARA MOBILE */
+    footer .flex {
+    flex-direction: column;
+      }
+      footer .linha-rodape {
+        text-align: center;
+      }
+}
+                  /* Estilos para a página de hobbies */
+
+body.hobbies {
+    background-color: #333;
+    color: #fff; 
+    font-family: Arial, sans-serif;
+}
+
+body.hobbies .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+body.hobbies .titulo {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+body.hobbies .info {
+    font-size: 20px;
+    color: #fff; 
+}
+
+body.hobbies .info p {
+    margin-bottom: 50px;
+    color:rgb(52, 163, 190) ;
+}
+
+body.hobbies .info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+body.hobbies .info ul li {
+    margin-bottom: 30px;
+}
+
+body.hobbies .info ul li { color: #fff; }
+
+body.hobbies .container h2 {
+  margin-top: 50px; 
+  color: rgb(52, 163, 190);
+}
